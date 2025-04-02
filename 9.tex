@@ -1,0 +1,63 @@
+\begin{center}
+\Large \textbf{Problema 9}
+\end{center}
+
+Ana y Beto juegan regularmente partidos de ping-pong.
+Un partido de ping-pong consiste de una serie de sets, y se juega al mejor 5 sets - el primer jugador en ganar 3 sets gana el partido.
+Un set es ganado por el jugador que primero alcanza 4 puntos y tiene una ventaja de al menos 2 puntos sobre su oponente.
+Es decir, si ambos jugadores tienen al menos 3 puntos cada uno (conocido como "deuce"), entonces se necesita ganar dos puntos consecutivos para ganar el juego:
+uno para obtener ventaja y otro para ganar el set.
+
+\bigskip
+Ana y Beto jugaron varios partidos y para cada partido que jugaron anotaron una secuencia de letras, donde 'A' representa un punto ganado por Ana y 'B'
+representa un punto ganado por Beto. Luego de jugar varios partidos arman otra secuencia de letras - una 'A' para cada partido ganado por Ana y una 'B' para
+cada partido ganado por Beto. Por ejemplo, para tres partidos que jugaron anotaron las siguientes secuencias (agregamos \texttt{()} y \texttt{[]} para indicar
+visualmente quién ganó cada set).
+
+\begin{verbatim}
+    1° partido: (AAAA)[BBBB](ABAABBAA)(AAABBA)
+    2° partido: (BAABAA)[BBBB][ABBBB][BBBAAB]
+    3° partido: (BAABABABAA)[ABBABB](BAABABAA)[ABBABABABB](BBAAAA)
+    Resultado:  ABA
+\end{verbatim}
+
+El resultado es \texttt{ABA} porque los ganadores de los partidos fueron, respectivamente, Ana (ganó 3-1 en sets en el 1° partido),
+Beto (ganó 3-1 en sets en el 2° partido) y Ana de nuevo (ganó 3-2 en sets en el 3° partido).
+
+\bigskip
+
+Dados los siguientes partidos jugados:
+\begin{verbatim}
+    1° partido: BBAAAABBBABBAABABAAABBBBABBABB
+    2° partido: BABBAABBABBABABABBABBABABB
+    3° partido: AABBBBBAAAAABAABBAAAAABBA
+    4° partido: BAABAABAABAABBAAAA
+    5° partido: BBBAABBAABABABAABBBBABBABABABB
+    Resultado:  ???
+\end{verbatim}
+
+\underline{¿Cuál es el resultado final que anotarían?}
+
+% Sets de ejemplo:
+
+% Gana Ana:
+% AAAA       (4-0)
+% AAABA      (4-1)
+% BAAAA      (4-1)
+% AAABBA     (4-2)
+% BBAAAA     (4-2)
+% BAABAA     (4-2)
+% ABAABBAA   (5-3)
+% BAABABAA   (5-3)
+% BAABABABAA (6-4)
+
+% Gana Beto:
+% BBBB       (4-0)
+% BBBAB      (4-1)
+% ABBBB      (4-1)
+% BBBAAB     (4-2)
+% AABBBB     (4-2)
+% ABBABB     (4-2)
+% BABBAABB   (5-3)
+% ABBABABB   (5-3)
+% ABBABABABB (6-4)

@@ -1,0 +1,34 @@
+\begin{center}
+\Large \textbf{Problema 3}
+\end{center}
+
+Hay $N$ puertas en fila, todas cerradas. Una persona camina por las puertas y altera cada puerta (la abre si está cerrada, y la cierra si estaba abierta). En su segunda pasada altera cada 2da puerta, en su tercera pasada altera 3ra puerta, y así consecutivamente, haciendo un total de $N$ pasadas.
+
+\bigskip
+
+Por ejemplo, si $N = 9$, las puertas quedan así:
+
+\bigskip
+
+\begin{verbatim}
+Número de puerta: 1 2 3 4 5 6 7 8 9
+Estado inicial:   0 0 0 0 0 0 0 0 0 (0 := cerrada, 1 := abierta)
+1° pasada:        1 1 1 1 1 1 1 1 1 
+2° pasada:        1 0 1 0 1 0 1 0 1 (2°, 4°, 6° y 8° puertas modificadas)
+3° pasada:        1 0 0 0 1 1 1 0 0 (3°, 6° y 9° puertas modificadas)
+4° pasada:        1 0 0 1 1 1 1 1 0 (4°, 8° puertas modificadas)
+5° pasada:        1 0 0 1 0 1 1 1 0 (5° puerta modificada)
+6° pasada:        1 0 0 1 0 0 1 1 0 (6° puerta modificada)
+7° pasada:        1 0 0 1 0 0 0 1 0 (7° puerta modificada)
+8° pasada:        1 0 0 1 0 0 0 0 0 (8° puerta modificada)
+9° pasada:        1 0 0 1 0 0 0 0 1 (9° puerta modificada)
+\end{verbatim}
+
+\bigskip
+
+En este caso, al final permanecen 3 puertas abiertas.
+
+\bigskip
+
+\underline{Si $N = 2025$, ¿cuántas puertas quedan abiertas al final del proceso?}
+

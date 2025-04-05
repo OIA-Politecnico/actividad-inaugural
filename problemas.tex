@@ -1,53 +1,94 @@
-\documentclass{article}
+\documentclass[14pt, a4paper]{extarticle}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage[margin=1cm, bottom=2cm]{geometry}
+\usepackage[margin=0.5cm, bottom=2cm]{geometry}
 \usepackage{fancyvrb}
 \usepackage{svg}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{float}
+\usepackage{dirtytalk}
+\usepackage{fancyvrb}
 
 \newcommand{\drawline}{\vspace{1em}\hrulefill\vspace{1em}}
 
+\title{
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{logo-oia.jpg}
+    \end{figure}
+    \vspace*{1in}
+    \font\myfont=cmtt12 at 30pt \myfont{Olimpiada de Informática Argentina}
+
+    \bigskip
+
+    \font\myfont=cmtt12 at 20pt \myfont{Desafío Invitacional}
+
+    \date{}
+}
+
 \begin{document}
-\Large
+       
+\maketitle
+\vfill
+
+\begin{center}
+    \font\myfont=cmtt12 at 20pt \myfont{Horarios} \\
+
+    \texttt{
+        Lunes:  2:30pm - 4:30pm (Lab. 1) \\
+        Martes: 4:30pm - 6:30pm (Lab. 1) \\
+        Jueves: 2:30pm - 4:30pm (Lab. 1) \\
+    }
+\end{center}
+    
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{QR.png}
+\end{figure}
+
+
+\newpage
+
+
 
 \drawline
-\input{1.tex}
+\input{problemas/puertas.tex}
 \drawline
+
 \newpage
+
 \drawline
-\input{2.tex}
+\input{problemas/orden.tex}
 \drawline
+\input{problemas/bxb.tex}
+\drawline
+\input{problemas/fibonacci.tex}
+\drawline
+
 \newpage
+
 \drawline
-\input{3.tex}
+\input{problemas/ping_pong.tex}
 \drawline
+
 \newpage
+
 \drawline
-\input{4.tex}
+\input{problemas/premios.tex}
 \drawline
+\input{problemas/fabrica.tex}
+\drawline
+
 \newpage
+
 \drawline
-\input{5.tex}
+\input{problemas/diagonales.tex}
 \drawline
-\newpage
-\drawline
-\input{6.tex}
-\drawline
-\newpage
-\drawline
-\input{7.tex}
-\drawline
-\newpage
-\drawline
-\input{8.tex}
-\drawline
-\newpage
-\drawline
-\input{9.tex}
+\input{problemas/caminos.tex}
 \drawline
 
 \end{document}

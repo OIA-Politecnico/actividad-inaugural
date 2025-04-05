@@ -1,16 +1,17 @@
 \begin{center}
-\Large \textbf{Problema 9}
+\Large \textbf{Problema E} \\
+\say{\texttt{ping pong}}
 \end{center}
 
 Ana y Beto juegan regularmente partidos de ping-pong.
 Un partido de ping-pong consiste de una serie de sets, y se juega al mejor 5 sets - el primer jugador en ganar 3 sets gana el partido.
 Un set es ganado por el jugador que primero alcanza 4 puntos y tiene una ventaja de al menos 2 puntos sobre su oponente.
-Es decir, si ambos jugadores tienen al menos 3 puntos cada uno (conocido como "deuce"), entonces se necesita ganar dos puntos consecutivos para ganar el juego:
+Es decir, si ambos jugadores tienen al menos 3 puntos cada uno (conocido como \say{deuce}), entonces se necesita ganar dos puntos consecutivos para ganar el juego:
 uno para obtener ventaja y otro para ganar el set.
 
 \bigskip
-Ana y Beto jugaron varios partidos y para cada partido que jugaron anotaron una secuencia de letras, donde 'A' representa un punto ganado por Ana y 'B'
-representa un punto ganado por Beto. Luego de jugar varios partidos arman otra secuencia de letras - una 'A' para cada partido ganado por Ana y una 'B' para
+Ana y Beto jugaron varios partidos y para cada partido que jugaron anotaron una secuencia de letras, donde \lq A' representa un punto ganado por Ana y \lq B'
+representa un punto ganado por Beto. Luego de jugar varios partidos arman otra secuencia de letras - una \lq A' para cada partido ganado por Ana y una \lq B' para
 cada partido ganado por Beto. Por ejemplo, para tres partidos que jugaron anotaron las siguientes secuencias (agregamos \texttt{()} y \texttt{[]} para indicar
 visualmente quién ganó cada set).
 
@@ -28,11 +29,15 @@ Beto (ganó 3-1 en sets en el 2° partido) y Ana de nuevo (ganó 3-2 en sets en 
 
 Dados los siguientes partidos jugados:
 \begin{verbatim}
-    1° partido: BBAAAABBBABBAABABAAABBBBABBABB
-    2° partido: BABBAABBABBABABABBABBABABB
-    3° partido: AABBBBBAAAAABAABBAAAAABBA
+    1° partido: BABBAABBABBABABABBABBABABB
+    2° partido: AABBBBBAAAAABAABBAAAAABBA
+    3° partido: BAABBAABBAAABAABBAABBABBABBAABBAABBBABBAABBAABAABAABBAABBAAA
     4° partido: BAABAABAABAABBAAAA
     5° partido: BBBAABBAABABABAABBBBABBABABABB
+    6° partido: BAABBAABBABBAAABBAABBAABBAABBBBAABBAABBAAAABBAABBAABAA
+    7° partido: BBBAABBAABBAABBAAAABBABABBAAABBABBBAB
+    8° partido: ABBAABBAABBBBAABBAABBABBABBAABBAABAABAABBAABBAAAABBABABB
+    9° partido: BBAAAABBBABBAABABAAABBBBABBABB
     Resultado:  ???
 \end{verbatim}
 
@@ -50,6 +55,8 @@ Dados los siguientes partidos jugados:
 % ABAABBAA   (5-3)
 % BAABABAA   (5-3)
 % BAABABABAA (6-4)
+% ABBAABBAABAA (7-5)
+% BAABBAABBAAA (7-5)
 
 % Gana Beto:
 % BBBB       (4-0)
@@ -61,3 +68,5 @@ Dados los siguientes partidos jugados:
 % BABBAABB   (5-3)
 % ABBABABB   (5-3)
 % ABBABABABB (6-4)
+% BAABBAABBABB (7-5)
+% ABBAABBAABBB (7-5)

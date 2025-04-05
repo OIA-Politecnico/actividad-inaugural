@@ -7,6 +7,6 @@ $(PDF): *.tex
 	pdflatex $(TEX)
 
 clean:
-	rm -f *.aux *.log
+	rm -f *.aux *.log *.pdf
 
 .PHONY: clean all

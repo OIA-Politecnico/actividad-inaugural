@@ -1,12 +1,6 @@
-PDF = problemas.pdf
-TEX = problemas.tex
-
-all:
-
-$(PDF): *.tex
-	pdflatex $(TEX)
+main:
+	pdflatex Tex/main.tex
+	mv main.pdf Outbox/Handout.pdf
 
 clean:
 	rm -f *.aux *.log *.pdf
-
-.PHONY: clean all
